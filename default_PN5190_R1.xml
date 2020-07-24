@@ -1,0 +1,1756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EEPROM>
+    <Region RegionName="USER_PMU" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="PwrConfig" Offset="0x00" Value="0xE4" />
+        <Parameter Name="DcdcConfig" Offset="0x01" Value="0x31" />
+        <Parameter Name="TxldoConfig" Offset="0x02" Value="0xFFFFAEA7" />
+        <Parameter Name="TxLdoVddpaHigh" Offset="0x06" Value="0x00" />
+        <Parameter Name="TxLdoVddpaLow" Offset="0x07" Value="0x00" />
+        <Parameter Name="TxLdoVddpaMaxRdr" Offset="0x08" Value="0x2A" />
+        <Parameter Name="TxLdoVddpaMaxCard" Offset="0x09" Value="0x2A" />
+        <Parameter Name="BoostDefaultVoltage" Offset="0x0A" Value="0x1D" />
+    </Region>
+
+    <Region RegionName="CLKGEN" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="XtalConfig" Offset="0x10" Value="0x00" />
+        <Parameter Name="XtalTimeOut" Offset="0x11" Value="0xFF" />
+    </Region>
+
+    <Region RegionName="RF_CLOCK_CFG" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="PLLClkInputFrq" Offset="0x12" Value="0x08" />
+        <Parameter Name="XtalCheckDelay" Offset="0x13" Value="0xF6" />
+    </Region>
+
+    <Region RegionName="USER_SMU" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="TempWarning" Offset="0x14" Value="0x99" />
+        <Parameter Name="StandbyVoltage" Offset="0x15" Value="0x01" />
+        <Parameter Name="EnableGpio0OnOverTemp" Offset="0x16" Value="0x01" />
+    </Region>
+
+    <Region RegionName="RM_GLOBAL_TX_SHAPING" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="Config" Offset="0x17" Value="0x00" />
+        <Parameter Name="TX_INV_RM" Offset="0x18" Value="0x02" />
+        <Parameter Name="CLK_MODE_1" Offset="0x19" Value="0x77" />
+        <Parameter Name="CLK_MODE_2" Offset="0x1A" Value="0x17" />
+        <Parameter Name="GSN_MOD_RM" Offset="0x1B" Value="0x1F" />
+        <Parameter Name="GSN_CW_RM" Offset="0x1C" Value="0x1F" />
+        <Parameter Name="GSP_RM" Offset="0x1D" Value="0x1F" />
+        <Parameter Name="TX_FRCZERO_THR" Offset="0x1E" Value="0x0A" />
+        <Parameter Name="SignalScalingConfig" Offset="0x1F" Value="0xFF" />
+        <Parameter Name="TX_PH_SHIFT_DIV10" Offset="0x20" Value="0x19" />
+        <Parameter Name="TX_PH_SHIFT_MOD10" Offset="0x21" Value="0x05" />
+    </Region>
+
+    <Region RegionName="RM_TECHNO_TX_SHAPING" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="ResidualAmplitudeLevel_A106" Offset="0x22" Value="0x00" />
+        <Parameter Name="EdgeType_A106" Offset="0x23" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_A106" Offset="0x24" Value="0x64" />
+        <Parameter Name="EdgeLength_A106" Offset="0x25" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_A212" Offset="0x26" Value="0x00" />
+        <Parameter Name="EdgeType_A212" Offset="0x27" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_A212" Offset="0x28" Value="0x44" />
+        <Parameter Name="EdgeLength_A212" Offset="0x29" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_A424" Offset="0x2A" Value="0x00" />
+        <Parameter Name="EdgeType_A424" Offset="0x2B" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_A424" Offset="0x2C" Value="0x24" />
+        <Parameter Name="EdgeLength_A424" Offset="0x2D" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_A848" Offset="0x2E" Value="0x00" />
+        <Parameter Name="EdgeType_A848" Offset="0x2F" Value="0x11" />
+        <Parameter Name="EdgeStyleConfiguration_A848" Offset="0x30" Value="0x18" />
+        <Parameter Name="EdgeLength_A848" Offset="0x31" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_B106" Offset="0x32" Value="0xCF" />
+        <Parameter Name="EdgeType_B106" Offset="0x33" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_B106" Offset="0x34" Value="0x66" />
+        <Parameter Name="EdgeLength_B106" Offset="0x35" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_B212" Offset="0x36" Value="0xCF" />
+        <Parameter Name="EdgeType_B212" Offset="0x37" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_B212" Offset="0x38" Value="0x66" />
+        <Parameter Name="EdgeLength_B212" Offset="0x39" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_B424" Offset="0x3A" Value="0xCF" />
+        <Parameter Name="EdgeType_B424" Offset="0x3B" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_B424" Offset="0x3C" Value="0x55" />
+        <Parameter Name="EdgeLength_B424" Offset="0x3D" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_B848" Offset="0x3E" Value="0xCE" />
+        <Parameter Name="EdgeType_B848" Offset="0x3F" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_B848" Offset="0x40" Value="0x34" />
+        <Parameter Name="EdgeLength_B848" Offset="0x41" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_F212" Offset="0x42" Value="0xCF" />
+        <Parameter Name="EdgeType_F212" Offset="0x43" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_F212" Offset="0x44" Value="0x65" />
+        <Parameter Name="EdgeLength_F212" Offset="0x45" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_F424" Offset="0x46" Value="0xCE" />
+        <Parameter Name="EdgeType_F424" Offset="0x47" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_F424" Offset="0x48" Value="0x55" />
+        <Parameter Name="EdgeLength_F424" Offset="0x49" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V100_26" Offset="0x4A" Value="0x00" />
+        <Parameter Name="EdgeType_V100_26" Offset="0x4B" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_V100_26" Offset="0x4C" Value="0x66" />
+        <Parameter Name="EdgeLength_V100_26" Offset="0x4D" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V100_53" Offset="0x4E" Value="0x00" />
+        <Parameter Name="EdgeType_V100_53" Offset="0x4F" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_V100_53" Offset="0x50" Value="0x66" />
+        <Parameter Name="EdgeLength_V100_53" Offset="0x51" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V100_106" Offset="0x52" Value="0x00" />
+        <Parameter Name="EdgeType_V100_106" Offset="0x53" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_V100_106" Offset="0x54" Value="0x66" />
+        <Parameter Name="EdgeLength_V100_106" Offset="0x55" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V100_212" Offset="0x56" Value="0x00" />
+        <Parameter Name="EdgeType_V100_212" Offset="0x57" Value="0x33" />
+        <Parameter Name="EdgeStyleConfiguration_V100_212" Offset="0x58" Value="0x22" />
+        <Parameter Name="EdgeLength_V100_212" Offset="0x59" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V10_26" Offset="0x5A" Value="0xC0" />
+        <Parameter Name="EdgeType_V10_26" Offset="0x5B" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_V10_26" Offset="0x5C" Value="0x66" />
+        <Parameter Name="EdgeLength_V10_26" Offset="0x5D" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V10_53" Offset="0x5E" Value="0xC0" />
+        <Parameter Name="EdgeType_V10_53" Offset="0x5F" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_V10_53" Offset="0x60" Value="0x23" />
+        <Parameter Name="EdgeLength_V10_53" Offset="0x61" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V10_106" Offset="0x62" Value="0xC0" />
+        <Parameter Name="EdgeType_V10_106" Offset="0x63" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_V10_106" Offset="0x64" Value="0x23" />
+        <Parameter Name="EdgeLength_V10_106" Offset="0x65" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_V10_212" Offset="0x66" Value="0xC0" />
+        <Parameter Name="EdgeType_V10_212" Offset="0x67" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_V10_212" Offset="0x68" Value="0x23" />
+        <Parameter Name="EdgeLength_V10_212" Offset="0x69" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_180003m3_tari18p88" Offset="0x6A" Value="0xC0" />
+        <Parameter Name="EdgeType_180003m3_tari18p88" Offset="0x6B" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_180003m3_tari18p88" Offset="0x6C" Value="0x66" />
+        <Parameter Name="EdgeLength_180003m3_tari18p88" Offset="0x6D" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_180003m3_tari9p44" Offset="0x6E" Value="0xC0" />
+        <Parameter Name="EdgeType_180003m3_tari19p44" Offset="0x6F" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_180003m3_tari9p44" Offset="0x70" Value="0x66" />
+        <Parameter Name="EdgeLength_180003m3_tari9p44" Offset="0x71" Value="0x10" />
+        <Parameter Name="ResidualAmplitudeLevel_B_prime106" Offset="0x72" Value="0xCF" />
+        <Parameter Name="EdgeType_B_prime106" Offset="0x73" Value="0x22" />
+        <Parameter Name="EdgeStyleConfiguration_B_prime106" Offset="0x74" Value="0x67" />
+        <Parameter Name="EdgeLength_B_prime106" Offset="0x75" Value="0x10" />
+    </Region>
+
+    <Region RegionName="DPC_SETTINGS" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="Config" Offset="0x76" Value="0x77" />
+        <Parameter Name="TargetCurrent" Offset="0x77" Value="0x0118" />
+        <Parameter Name="Hysteresis" Offset="0x79" Value="0x14" />
+        <Parameter Name="TimerPeriod" Offset="0x7A" Value="0x6A" />
+        <Parameter Name="MaskingTime" Offset="0x7B" Value="0x2A" />
+        <Parameter Name="VddpaShortCfg" Offset="0x7C" Value="0x03E8" />
+        <Parameter Name="VddpaDropCfg" Offset="0x7E" Value="0x01F4" />
+        <Parameter Name="VddpaSafe" Offset="0x80" Value="0x00" />
+        <Parameter Name="TxldoMaxDropOutCfg" Offset="0x81" Value="0x0E10" />
+        <Parameter Name="BoostDropOut" Offset="0x83" Value="0x012C" />
+        <Parameter Name="DPCWaitDuringFDT" Offset="0x85" Value="0x00C8" />
+        <Parameter Name="GuardTimeBeforeTx" Offset="0x87" Value="0x64" />
+        <Parameter Name="EnableDPCDuringFDT" Offset="0x88" Value="0x01" />
+        <Parameter Name="GuardTimeAfterRx" Offset="0x89" Value="0x01" />
+        <Parameter Name="LoSenseThreshold" Offset="0x8A" Value="0x32" />
+        <Parameter Name="Entry_00" Offset="0x8B" Value="0x0000136B" />
+        <Parameter Name="Entry_01" Offset="0x8F" Value="0x0000136B" />
+        <Parameter Name="Entry_02" Offset="0x93" Value="0x0000136B" />
+        <Parameter Name="Entry_03" Offset="0x97" Value="0x0000136B" />
+        <Parameter Name="Entry_04" Offset="0x9B" Value="0x0000136B" />
+        <Parameter Name="Entry_05" Offset="0x9F" Value="0x0000136B" />
+        <Parameter Name="Entry_06" Offset="0xA3" Value="0x0000006B" />
+        <Parameter Name="Entry_07" Offset="0xA7" Value="0x0000006B" />
+        <Parameter Name="Entry_08" Offset="0xAB" Value="0x0000006B" />
+        <Parameter Name="Entry_09" Offset="0xAF" Value="0x0000006B" />
+        <Parameter Name="Entry_10" Offset="0xB3" Value="0x0000006B" />
+        <Parameter Name="Entry_11" Offset="0xB7" Value="0x0000006B" />
+        <Parameter Name="Entry_12" Offset="0xBB" Value="0x0000006B" />
+        <Parameter Name="Entry_13" Offset="0xBF" Value="0x0000006B" />
+        <Parameter Name="Entry_14" Offset="0xC3" Value="0x0000006B" />
+        <Parameter Name="Entry_15" Offset="0xC7" Value="0x0000006B" />
+        <Parameter Name="Entry_16" Offset="0xCB" Value="0x0000006B" />
+        <Parameter Name="Entry_17" Offset="0xCF" Value="0x0000006B" />
+        <Parameter Name="Entry_18" Offset="0xD3" Value="0x0000006B" />
+        <Parameter Name="Entry_19" Offset="0xD7" Value="0x0000006B" />
+        <Parameter Name="Entry_20" Offset="0xDB" Value="0x0000006B" />
+        <Parameter Name="Entry_21" Offset="0xDF" Value="0x0000006B" />
+        <Parameter Name="Entry_22" Offset="0xE3" Value="0x0000006B" />
+        <Parameter Name="Entry_23" Offset="0xE7" Value="0x0000006A" />
+        <Parameter Name="Entry_24" Offset="0xEB" Value="0x00000069" />
+        <Parameter Name="Entry_25" Offset="0xEF" Value="0x00000068" />
+        <Parameter Name="Entry_26" Offset="0xF3" Value="0x00000066" />
+        <Parameter Name="Entry_27" Offset="0xF7" Value="0x00000062" />
+        <Parameter Name="Entry_28" Offset="0xFB" Value="0x0000005F" />
+        <Parameter Name="Entry_29" Offset="0xFF" Value="0x0000005C" />
+        <Parameter Name="Entry_30" Offset="0x103" Value="0x00000058" />
+        <Parameter Name="Entry_31" Offset="0x107" Value="0x00000054" />
+        <Parameter Name="Entry_32" Offset="0x10B" Value="0x0000004C" />
+        <Parameter Name="Entry_33" Offset="0x10F" Value="0x00000044" />
+        <Parameter Name="Entry_34" Offset="0x113" Value="0x0000003B" />
+        <Parameter Name="Entry_35" Offset="0x117" Value="0x00000032" />
+        <Parameter Name="Entry_36" Offset="0x11B" Value="0x00000020" />
+        <Parameter Name="Entry_37" Offset="0x11F" Value="0x00000011" />
+        <Parameter Name="Entry_38" Offset="0x123" Value="0x00000000" />
+        <Parameter Name="Entry_39" Offset="0x127" Value="0x00000000" />
+        <Parameter Name="Entry_40" Offset="0x12B" Value="0x00000000" />
+        <Parameter Name="Entry_41" Offset="0x12F" Value="0x00000000" />
+        <Parameter Name="Entry_42" Offset="0x133" Value="0x00000000" />
+    </Region>
+
+    <Region RegionName="ARC_SETTINGS" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="ArcConfig" Offset="0x137" Value="0x00E4" />
+        <Parameter Name="ArcVddpa" Offset="0x139" Value="0x2A241A1008" />
+        <Parameter Name="RmArcA_106" Offset="0x13E" Value="0x812A0015803080500050" />
+        <Parameter Name="RmArcA_212" Offset="0x148" Value="0x000A001A0050007F007F" />
+        <Parameter Name="RmArcA_424" Offset="0x152" Value="0x000A001A0050007F007F" />
+        <Parameter Name="RmArcA_848" Offset="0x15C" Value="0x000A001A0050007F007F" />
+        <Parameter Name="RmArcB_106" Offset="0x166" Value="0x000A00200030005F007F" />
+        <Parameter Name="RmArcB_212" Offset="0x170" Value="0x000A00200050007F007F" />
+        <Parameter Name="RmArcB_424" Offset="0x17A" Value="0x000A00200050007F007F" />
+        <Parameter Name="RmArcB_848" Offset="0x184" Value="0x000A00200050007F007F" />
+        <Parameter Name="RmArcF_212" Offset="0x18E" Value="0x000A00200050007F007F" />
+        <Parameter Name="RmArcF_424" Offset="0x198" Value="0x000A00200050007F007F" />
+        <Parameter Name="RmArcV_6p6" Offset="0x1A2" Value="0x000A000A000A000A000A" />
+        <Parameter Name="RmArcV_26" Offset="0x1AC" Value="0x000A000A002F002F002F" />
+        <Parameter Name="RmArcV_53" Offset="0x1B6" Value="0x010A010A012F002F002F" />
+        <Parameter Name="RmArcV_106" Offset="0x1C0" Value="0x000A000A002F002F002F" />
+        <Parameter Name="RmArcV_212" Offset="0x1CA" Value="0x000A000A002F002F002F" />
+        <Parameter Name="RmArc180003m3_SC424_4Man" Offset="0x1D4" Value="0x0114011F011F001F002F" />
+        <Parameter Name="RmArc180003m3_SC424_2Man" Offset="0x1DE" Value="0x0014001F001F001F002F" />
+        <Parameter Name="RmArc180003m3_SC848_4Man" Offset="0x1E8" Value="0x0114011F011F001F002F" />
+        <Parameter Name="RmArc180003m3_SC848_2Man" Offset="0x1F2" Value="0x0014001F001F001F002F" />
+        <Parameter Name="RmArc_AI_106" Offset="0x1FC" Value="0x000A000A000A000A000A" />
+        <Parameter Name="RmArc_AI_212" Offset="0x206" Value="0x000A000A000A000A000A" />
+        <Parameter Name="RmArc_AI_424" Offset="0x210" Value="0x000A000A000A000A000A" />
+    </Region>
+
+    <Region RegionName="AUTOCOLL_CFG" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="RfDebounceTimeout" Offset="0x2B2" Value="0x10" />
+        <Parameter Name="SensRes" Offset="0x2B3" Value="0x42" />
+        <Parameter Name="NfcID1" Offset="0x2B5" Value="0xAA" />
+        <Parameter Name="SelRes" Offset="0x2B8" Value="0x60" />
+        <Parameter Name="PollRes" Offset="0x2B9" Value="0x01" />
+        <Parameter Name="RandomUIDEnable" Offset="0x2CB" Value="0x00" />
+    </Region>
+
+    <Region RegionName="MFC_CFG" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="MfcAuthTimeout" Offset="0x0x2CC" Value="0x05" />
+    </Region>
+
+    <Region RegionName="SYS_CONFIG" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="EXPERT_MODE_DISABLE" Offset="0x0x2CE" Value="0x00000000" />
+    </Region>
+
+    <Region RegionName="APC_RSSI" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="RssiTimer" Offset="0x2DA" Value="0x0423" />
+        <Parameter Name="RssiTimerFirstPeriod" Offset="0x2DC" Value="0x013D" />
+        <Parameter Name="RssiCtrl_00_AB" Offset="0x2DE" Value="0x09" />
+        <Parameter Name="RssiNbEntriesAB" Offset="0x2DF" Value="0x16" />
+        <Parameter Name="RssiThresholdAB_01" Offset="0x2E0" Value="0x1643" />
+        <Parameter Name="ArbPhaseAB_01" Offset="0x2E2" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_02" Offset="0x2E4" Value="0x1DAE" />
+        <Parameter Name="ArbPhaseAB_02" Offset="0x2E6" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_03" Offset="0x2E8" Value="0x251A" />
+        <Parameter Name="ArbPhaseAB_03" Offset="0x2EA" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_04" Offset="0x2EC" Value="0x2C85" />
+        <Parameter Name="ArbPhaseAB_04" Offset="0x2EE" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_05" Offset="0x2F0" Value="0x331F" />
+        <Parameter Name="ArbPhaseAB_05" Offset="0x2F2" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_06" Offset="0x2F4" Value="0x3B5C" />
+        <Parameter Name="ArbPhaseAB_06" Offset="0x2F6" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_07" Offset="0x2F8" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_07" Offset="0x2FA" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_08" Offset="0x2FC" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_08" Offset="0x2FE" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_09" Offset="0x300" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_09" Offset="0x302" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_0A" Offset="0x304" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_0A" Offset="0x306" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_0B" Offset="0x308" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_0B" Offset="0x30A" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_0C" Offset="0x30C" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_0C" Offset="0x30E" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_0D" Offset="0x310" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_0D" Offset="0x312" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_0E" Offset="0x314" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_0E" Offset="0x316" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_0F" Offset="0x318" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_0F" Offset="0x31A" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_10" Offset="0x31C" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_10" Offset="0x31E" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_11" Offset="0x320" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_11" Offset="0x322" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_12" Offset="0x324" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_12" Offset="0x326" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_13" Offset="0x328" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_13" Offset="0x32A" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_14" Offset="0x32C" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_14" Offset="0x32E" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_15" Offset="0x330" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_15" Offset="0x332" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_16" Offset="0x334" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_16" Offset="0x336" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_17" Offset="0x338" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_17" Offset="0x33A" Value="0x0000" />
+        <Parameter Name="RssiThresholdAB_18" Offset="0x33C" Value="0x76B8" />
+        <Parameter Name="ArbPhaseAB_18" Offset="0x33E" Value="0x0000" />
+        <Parameter Name="RssiCtrl_00_F" Offset="0x340" Value="0x0C" />
+        <Parameter Name="RssiNbEntriesF" Offset="0x341" Value="0x16" />
+        <Parameter Name="RssiThresholdF_01" Offset="0x342" Value="0x1643" />
+        <Parameter Name="ArbPhaseF_01" Offset="0x344" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_02" Offset="0x346" Value="0x1DAE" />
+        <Parameter Name="ArbPhaseF_02" Offset="0x348" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_03" Offset="0x34A" Value="0x251A" />
+        <Parameter Name="ArbPhaseF_03" Offset="0x34C" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_04" Offset="0x34E" Value="0x2C85" />
+        <Parameter Name="ArbPhaseF_04" Offset="0x350" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_05" Offset="0x352" Value="0x331F" />
+        <Parameter Name="ArbPhaseF_05" Offset="0x354" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_06" Offset="0x356" Value="0x3B5C" />
+        <Parameter Name="ArbPhaseF_06" Offset="0x358" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_07" Offset="0x35A" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_07" Offset="0x35C" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_08" Offset="0x35E" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_08" Offset="0x360" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_09" Offset="0x362" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_09" Offset="0x364" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_0A" Offset="0x366" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_0A" Offset="0x368" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_0B" Offset="0x36A" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_0B" Offset="0x36C" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_0C" Offset="0x36E" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_0C" Offset="0x370" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_0D" Offset="0x372" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_0D" Offset="0x374" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_0E" Offset="0x376" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_0E" Offset="0x378" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_0F" Offset="0x37A" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_0F" Offset="0x37C" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_10" Offset="0x37E" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_10" Offset="0x380" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_11" Offset="0x382" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_11" Offset="0x384" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_12" Offset="0x386" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_12" Offset="0x388" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_13" Offset="0x38A" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_13" Offset="0x38C" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_14" Offset="0x38E" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_14" Offset="0x390" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_15" Offset="0x392" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_15" Offset="0x394" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_16" Offset="0x396" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_16" Offset="0x398" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_17" Offset="0x39A" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_17" Offset="0x39C" Value="0x0000" />
+        <Parameter Name="RssiThresholdF_18" Offset="0x39E" Value="0x76B8" />
+        <Parameter Name="ArbPhaseF_18" Offset="0x3A0" Value="0x0000" />
+    </Region>
+
+    <Region RegionName="APC_TX" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="TxParamEntry_00_ID" Offset="0x3A2" Value="0x40" />
+        <Parameter Name="TxParamEntry_00_Tx1" Offset="0x3A3" Value="0x00" />
+        <Parameter Name="TxParamEntry_00_Tx2" Offset="0x3A4" Value="0x6A" />
+        <Parameter Name="TxParamEntry_01_ID" Offset="0x3A5" Value="0x41" />
+        <Parameter Name="TxParamEntry_01_Tx1" Offset="0x3A6" Value="0x00" />
+        <Parameter Name="TxParamEntry_01_Tx2" Offset="0x3A7" Value="0x6A" />
+        <Parameter Name="TxParamEntry_02_ID" Offset="0x3A8" Value="0x42" />
+        <Parameter Name="TxParamEntry_02_Tx1" Offset="0x3A9" Value="0x00" />
+        <Parameter Name="TxParamEntry_02_Tx2" Offset="0x3AA" Value="0x6A" />
+        <Parameter Name="TxParamEntry_03_ID" Offset="0x3AB" Value="0x43" />
+        <Parameter Name="TxParamEntry_03_Tx1" Offset="0x3AC" Value="0x00" />
+        <Parameter Name="TxParamEntry_03_Tx2" Offset="0x3AD" Value="0x6A" />
+        <Parameter Name="TxParamEntry_04_ID" Offset="0x3AE" Value="0x44" />
+        <Parameter Name="TxParamEntry_04_Tx1" Offset="0x3AF" Value="0x00" />
+        <Parameter Name="TxParamEntry_04_Tx2" Offset="0x3B0" Value="0x6A" />
+        <Parameter Name="TxParamEntry_05_ID" Offset="0x3B1" Value="0x45" />
+        <Parameter Name="TxParamEntry_05_Tx1" Offset="0x3B2" Value="0x00" />
+        <Parameter Name="TxParamEntry_05_Tx2" Offset="0x3B3" Value="0x6A" />
+        <Parameter Name="TxParamEntry_06_ID" Offset="0x3B4" Value="0x46" />
+        <Parameter Name="TxParamEntry_06_Tx1" Offset="0x3B5" Value="0x00" />
+        <Parameter Name="TxParamEntry_06_Tx2" Offset="0x3B6" Value="0x6A" />
+        <Parameter Name="TxParamEntry_07_ID" Offset="0x3B7" Value="0x47" />
+        <Parameter Name="TxParamEntry_07_Tx1" Offset="0x3B8" Value="0x00" />
+        <Parameter Name="TxParamEntry_07_Tx2" Offset="0x3B9" Value="0x6A" />
+        <Parameter Name="TxParamEntry_08_ID" Offset="0x3BA" Value="0x48" />
+        <Parameter Name="TxParamEntry_08_Tx1" Offset="0x3BB" Value="0x00" />
+        <Parameter Name="TxParamEntry_08_Tx2" Offset="0x3BC" Value="0x6A" />
+        <Parameter Name="TxParamEntry_09_ID" Offset="0x3BD" Value="0x49" />
+        <Parameter Name="TxParamEntry_09_Tx1" Offset="0x3BE" Value="0x00" />
+        <Parameter Name="TxParamEntry_09_Tx2" Offset="0x3BF" Value="0x6A" />
+        <Parameter Name="TxParamEntry_0A_ID" Offset="0x3C0" Value="0x4A" />
+        <Parameter Name="TxParamEntry_0A_Tx1" Offset="0x3C1" Value="0x00" />
+        <Parameter Name="TxParamEntry_0A_Tx2" Offset="0x3C2" Value="0x5D" />
+        <Parameter Name="TxParamEntry_0B_ID" Offset="0x3C3" Value="0x4B" />
+        <Parameter Name="TxParamEntry_0B_Tx1" Offset="0x3C4" Value="0x00" />
+        <Parameter Name="TxParamEntry_0B_Tx2" Offset="0x3C5" Value="0x50" />
+        <Parameter Name="TxParamEntry_0C_ID" Offset="0x3C6" Value="0x4C" />
+        <Parameter Name="TxParamEntry_00C_Tx1" Offset="0x3C7" Value="0x00" />
+        <Parameter Name="TxParamEntry_00C_Tx2" Offset="0x3C8" Value="0x43" />
+        <Parameter Name="TxParamEntry_0D_ID" Offset="0x3C9" Value="0x4D" />
+        <Parameter Name="TxParamEntry_0D_Tx1" Offset="0x3CA" Value="0x00" />
+        <Parameter Name="TxParamEntry_0D_Tx2" Offset="0x3CB" Value="0x36" />
+        <Parameter Name="TxParamEntry_0E_ID" Offset="0x3CC" Value="0x4E" />
+        <Parameter Name="TxParamEntry_0E_Tx1" Offset="0x3CD" Value="0x00" />
+        <Parameter Name="TxParamEntry_0E_Tx2" Offset="0x3CE" Value="0x2A" />
+        <Parameter Name="TxParamEntry_0F_ID" Offset="0x3CF" Value="0x4F" />
+        <Parameter Name="TxParamEntry_0F_Tx1" Offset="0x3D0" Value="0x00" />
+        <Parameter Name="TxParamEntry_0F_Tx2" Offset="0x3D1" Value="0x2A" />
+        <Parameter Name="TxParamEntry_10_ID" Offset="0x3D2" Value="0x50" />
+        <Parameter Name="TxParamEntry_10_Tx1" Offset="0x3D3" Value="0x00" />
+        <Parameter Name="TxParamEntry_10_Tx2" Offset="0x3D4" Value="0x2A" />
+        <Parameter Name="TxParamEntry_11_ID" Offset="0x3D5" Value="0x51" />
+        <Parameter Name="TxParamEntry_11_Tx1" Offset="0x3D6" Value="0x00" />
+        <Parameter Name="TxParamEntry_11_Tx2" Offset="0x3D7" Value="0x2A" />
+        <Parameter Name="TxParamEntry_12_ID" Offset="0x3D8" Value="0x52" />
+        <Parameter Name="TxParamEntry_12_Tx1" Offset="0x3D9" Value="0x00" />
+        <Parameter Name="TxParamEntry_12_Tx2" Offset="0x3DA" Value="0x2A" />
+        <Parameter Name="TxParamEntry_13_ID" Offset="0x3DB" Value="0x53" />
+        <Parameter Name="TxParamEntry_13_Tx1" Offset="0x3DC" Value="0x00" />
+        <Parameter Name="TxParamEntry_13_Tx2" Offset="0x3DD" Value="0x2A" />
+        <Parameter Name="TxParamEntry_14_ID" Offset="0x3DE" Value="0x54" />
+        <Parameter Name="TxParamEntry_14_Tx1" Offset="0x3DF" Value="0x00" />
+        <Parameter Name="TxParamEntry_14_Tx2" Offset="0x3E0" Value="0x2A" />
+        <Parameter Name="TxParamEntry_15_ID" Offset="0x3E1" Value="0x55" />
+        <Parameter Name="TxParamEntry_15_Tx1" Offset="0x3E2" Value="0x00" />
+        <Parameter Name="TxParamEntry_15_Tx2" Offset="0x3E3" Value="0x2A" />
+        <Parameter Name="TxParamEntry_16_ID" Offset="0x3E4" Value="0x56" />
+        <Parameter Name="TxParamEntry_16_Tx1" Offset="0x3E5" Value="0x00" />
+        <Parameter Name="TxParamEntry_16_Tx2" Offset="0x3E6" Value="0x2A" />
+        <Parameter Name="TxParamEntry_17_ID" Offset="0x3E7" Value="0x57" />
+        <Parameter Name="TxParamEntry_17_Tx1" Offset="0x3E8" Value="0x00" />
+        <Parameter Name="TxParamEntry_17_Tx2" Offset="0x3E9" Value="0x2A" />
+        <Parameter Name="TxParamEntry_18_ID" Offset="0x3EA" Value="0x58" />
+        <Parameter Name="TxParamEntry_18_Tx1" Offset="0x3EB" Value="0x00" />
+        <Parameter Name="TxParamEntry_18_Tx2" Offset="0x3EC" Value="0x2A" />
+        <Parameter Name="TxParamEntry_19_ID" Offset="0x3ED" Value="0x59" />
+        <Parameter Name="TxParamEntry_19_Tx1" Offset="0x3EE" Value="0x00" />
+        <Parameter Name="TxParamEntry_19_Tx2" Offset="0x3EF" Value="0x2A" />
+        <Parameter Name="TxParamEntry_1A_ID" Offset="0x3F0" Value="0x5A" />
+        <Parameter Name="TxParamEntry_1A_Tx1" Offset="0x3F1" Value="0x00" />
+        <Parameter Name="TxParamEntry_1A_Tx2" Offset="0x3F2" Value="0x2A" />
+        <Parameter Name="TxParamEntry_1B_ID" Offset="0x3F3" Value="0x5B" />
+        <Parameter Name="TxParamEntry_1B_Tx1" Offset="0x3F4" Value="0x00" />
+        <Parameter Name="TxParamEntry_1B_Tx2" Offset="0x3F5" Value="0x2A" />
+        <Parameter Name="TxParamEntry_1C_ID" Offset="0x3F6" Value="0x5C" />
+        <Parameter Name="TxParamEntry_1C_Tx1" Offset="0x3F7" Value="0x00" />
+        <Parameter Name="TxParamEntry_1C_Tx2" Offset="0x3F8" Value="0x2A" />
+        <Parameter Name="TxParamEntry_1D_ID" Offset="0x3F9" Value="0x5D" />
+        <Parameter Name="TxParamEntry_1D_Tx1" Offset="0x3FA" Value="0x00" />
+        <Parameter Name="TxParamEntry_1D_Tx2" Offset="0x3FB" Value="0x2A" />
+        <Parameter Name="TxParamEntry_1E_ID" Offset="0x3FC" Value="0x5E" />
+        <Parameter Name="TxParamEntry_1E_Tx1" Offset="0x3FD" Value="0x00" />
+        <Parameter Name="TxParamEntry_1E_Tx2" Offset="0x3FE" Value="0x2A" />
+        <Parameter Name="TxParamEntry_1F_ID" Offset="0x3FF" Value="0x5F" />
+        <Parameter Name="TxParamEntry_1F_Tx1" Offset="0x400" Value="0x00" />
+        <Parameter Name="TxParamEntry_1F_Tx2" Offset="0x401" Value="0x2A" />
+        <Parameter Name="TxParamEntry_20_ID" Offset="0x402" Value="0x60" />
+        <Parameter Name="TxParamEntry_20_Tx1" Offset="0x403" Value="0x00" />
+        <Parameter Name="TxParamEntry_20_Tx2" Offset="0x404" Value="0x2A" />
+        <Parameter Name="TxParamEntry_21_ID" Offset="0x405" Value="0x61" />
+        <Parameter Name="TxParamEntry_21_Tx1" Offset="0x406" Value="0x00" />
+        <Parameter Name="TxParamEntry_21_Tx2" Offset="0x407" Value="0x2A" />
+        <Parameter Name="TxParamEntry_22_ID" Offset="0x408" Value="0x62" />
+        <Parameter Name="TxParamEntry_22_Tx1" Offset="0x409" Value="0x00" />
+        <Parameter Name="TxParamEntry_22_Tx2" Offset="0x40A" Value="0x2A" />
+        <Parameter Name="TxParamEntry_23_ID" Offset="0x40B" Value="0x63" />
+        <Parameter Name="TxParamEntry_23_Tx1" Offset="0x40C" Value="0x00" />
+        <Parameter Name="TxParamEntry_23_Tx2" Offset="0x40D" Value="0x2A" />
+        <Parameter Name="TxParamEntry_24_ID" Offset="0x40E" Value="0x64" />
+        <Parameter Name="TxParamEntry_24_Tx1" Offset="0x40F" Value="0x00" />
+        <Parameter Name="TxParamEntry_24_Tx2" Offset="0x410" Value="0x2A" />
+        <Parameter Name="TxParamEntry_25_ID" Offset="0x411" Value="0x65" />
+        <Parameter Name="TxParamEntry_25_Tx1" Offset="0x412" Value="0x00" />
+        <Parameter Name="TxParamEntry_25_Tx2" Offset="0x413" Value="0x2A" />
+        <Parameter Name="TxParamEntry_26_ID" Offset="0x414" Value="0x66" />
+        <Parameter Name="TxParamEntry_26_Tx1" Offset="0x415" Value="0x00" />
+        <Parameter Name="TxParamEntry_26_Tx2" Offset="0x416" Value="0x2A" />
+        <Parameter Name="TxParamEntry_27_ID" Offset="0x417" Value="0x67" />
+        <Parameter Name="TxParamEntry_27_Tx1" Offset="0x418" Value="0x00" />
+        <Parameter Name="TxParamEntry_27_Tx2" Offset="0x419" Value="0x2A" />
+        <Parameter Name="TxParamEntry_28_ID" Offset="0x41A" Value="0x68" />
+        <Parameter Name="TxParamEntry_28_Tx1" Offset="0x41B" Value="0x00" />
+        <Parameter Name="TxParamEntry_28_Tx2" Offset="0x41C" Value="0x2A" />
+        <Parameter Name="TxParamEntry_29_ID" Offset="0x41D" Value="0x69" />
+        <Parameter Name="TxParamEntry_29_Tx1" Offset="0x41E" Value="0x00" />
+        <Parameter Name="TxParamEntry_29_Tx2" Offset="0x41F" Value="0x2A" />
+        <Parameter Name="TxParamEntry_2A_ID" Offset="0x420" Value="0x6A" />
+        <Parameter Name="TxParamEntry_2A_Tx1" Offset="0x421" Value="0x00" />
+        <Parameter Name="TxParamEntry_2A_Tx2" Offset="0x422" Value="0x2A" />
+        <Parameter Name="TxParamEntry_2B_ID" Offset="0x423" Value="0x6B" />
+        <Parameter Name="TxParamEntry_2B_Tx1" Offset="0x424" Value="0x00" />
+        <Parameter Name="TxParamEntry_2B_Tx2" Offset="0x425" Value="0x2A" />
+        <Parameter Name="TxParamEntry_2C_ID" Offset="0x426" Value="0x6C" />
+        <Parameter Name="TxParamEntry_2C_Tx1" Offset="0x427" Value="0x00" />
+        <Parameter Name="TxParamEntry_2C_Tx2" Offset="0x428" Value="0x2A" />
+        <Parameter Name="TxParamEntry_2D_ID" Offset="0x429" Value="0x6D" />
+        <Parameter Name="TxParamEntry_2D_Tx1" Offset="0x42A" Value="0x00" />
+        <Parameter Name="TxParamEntry_2D_Tx2" Offset="0x42B" Value="0x2A" />
+        <Parameter Name="TxParamEntry_2E_ID" Offset="0x42C" Value="0x6E" />
+        <Parameter Name="TxParamEntry_2E_Tx1" Offset="0x42D" Value="0x00" />
+        <Parameter Name="TxParamEntry_2E_Tx2" Offset="0x42E" Value="0x2A" />
+        <Parameter Name="TxParamEntry_2F_ID" Offset="0x42F" Value="0x6F" />
+        <Parameter Name="TxParamEntry_2F_Tx1" Offset="0x430" Value="0x00" />
+        <Parameter Name="TxParamEntry_2F_Tx2" Offset="0x431" Value="0x2A" />
+        <Parameter Name="TxParamEntry_30_ID" Offset="0x432" Value="0x70" />
+        <Parameter Name="TxParamEntry_30_Tx1" Offset="0x433" Value="0x00" />
+        <Parameter Name="TxParamEntry_30_Tx2" Offset="0x434" Value="0x2A" />
+        <Parameter Name="TxParamEntry_31_ID" Offset="0x435" Value="0x71" />
+        <Parameter Name="TxParamEntry_31_Tx1" Offset="0x436" Value="0x00" />
+        <Parameter Name="TxParamEntry_31_Tx2" Offset="0x437" Value="0x2A" />
+        <Parameter Name="TxParamEntry_32_ID" Offset="0x438" Value="0x72" />
+        <Parameter Name="TxParamEntry_32_Tx1" Offset="0x439" Value="0x00" />
+        <Parameter Name="TxParamEntry_32_Tx2" Offset="0x43A" Value="0x2A" />
+        <Parameter Name="TxParamEntry_33_ID" Offset="0x43B" Value="0x73" />
+        <Parameter Name="TxParamEntry_33_Tx1" Offset="0x43C" Value="0x00" />
+        <Parameter Name="TxParamEntry_33_Tx2" Offset="0x43D" Value="0x2A" />
+        <Parameter Name="TxParamEntry_34_ID" Offset="0x43E" Value="0x74" />
+        <Parameter Name="TxParamEntry_34_Tx1" Offset="0x43F" Value="0x00" />
+        <Parameter Name="TxParamEntry_34_Tx2" Offset="0x440" Value="0x2A" />
+        <Parameter Name="TxParamEntry_35_ID" Offset="0x441" Value="0x75" />
+        <Parameter Name="TxParamEntry_35_Tx1" Offset="0x442" Value="0x00" />
+        <Parameter Name="TxParamEntry_35_Tx2" Offset="0x443" Value="0x2A" />
+        <Parameter Name="TxParamEntry_36_ID" Offset="0x444" Value="0x76" />
+        <Parameter Name="TxParamEntry_36_Tx1" Offset="0x445" Value="0x00" />
+        <Parameter Name="TxParamEntry_36_Tx2" Offset="0x446" Value="0x2A" />
+        <Parameter Name="TxParamEntry_37_ID" Offset="0x447" Value="0x77" />
+        <Parameter Name="TxParamEntry_37_Tx1" Offset="0x448" Value="0x00" />
+        <Parameter Name="TxParamEntry_37_Tx2" Offset="0x449" Value="0x2A" />
+        <Parameter Name="TxParamEntry_38_ID" Offset="0x44A" Value="0x78" />
+        <Parameter Name="TxParamEntry_38_Tx1" Offset="0x44B" Value="0x00" />
+        <Parameter Name="TxParamEntry_38_Tx2" Offset="0x44C" Value="0x2A" />
+        <Parameter Name="TxParamEntry_39_ID" Offset="0x44D" Value="0x79" />
+        <Parameter Name="TxParamEntry_39_Tx1" Offset="0x44E" Value="0x00" />
+        <Parameter Name="TxParamEntry_39_Tx2" Offset="0x44F" Value="0x2A" />
+        <Parameter Name="TxParamEntry_3A_ID" Offset="0x450" Value="0x7A" />
+        <Parameter Name="TxParamEntry_3A_Tx1" Offset="0x451" Value="0x00" />
+        <Parameter Name="TxParamEntry_3A_Tx2" Offset="0x452" Value="0x2A" />
+        <Parameter Name="TxParamEntry_3B_ID" Offset="0x453" Value="0x7B" />
+        <Parameter Name="TxParamEntry_3B_Tx1" Offset="0x454" Value="0x00" />
+        <Parameter Name="TxParamEntry_3B_Tx2" Offset="0x455" Value="0x2A" />
+        <Parameter Name="TxParamEntry_3C_ID" Offset="0x456" Value="0x7C" />
+        <Parameter Name="TxParamEntry_3C_Tx1" Offset="0x457" Value="0x00" />
+        <Parameter Name="TxParamEntry_3C_Tx2" Offset="0x458" Value="0x2A" />
+        <Parameter Name="TxParamEntry_3D_ID" Offset="0x459" Value="0x7D" />
+        <Parameter Name="TxParamEntry_3D_Tx1" Offset="0x45A" Value="0x00" />
+        <Parameter Name="TxParamEntry_3D_Tx2" Offset="0x45B" Value="0x2A" />
+        <Parameter Name="TxParamEntry_3E_ID" Offset="0x45C" Value="0x7E" />
+        <Parameter Name="TxParamEntry_3E_Tx1" Offset="0x45D" Value="0x00" />
+        <Parameter Name="TxParamEntry_3E_Tx2" Offset="0x45E" Value="0x2A" />
+        <Parameter Name="TxParamEntry_3F_ID" Offset="0x45F" Value="0x7F" />
+        <Parameter Name="TxParamEntry_3F_Tx1" Offset="0x460" Value="0x00" />
+        <Parameter Name="TxParamEntry_3F_Tx2" Offset="0x461" Value="0x2A" />
+        <Parameter Name="TxParamEntry_40_ID" Offset="0x462" Value="0x7F" />
+        <Parameter Name="TxParamEntry_40_Tx1" Offset="0x463" Value="0x00" />
+        <Parameter Name="TxParamEntry_40_Tx2" Offset="0x464" Value="0x2A" />
+        <Parameter Name="TxParamEntry_41_ID" Offset="0x465" Value="0x7F" />
+        <Parameter Name="TxParamEntry_41_Tx1" Offset="0x466" Value="0x00" />
+        <Parameter Name="TxParamEntry_41_Tx2" Offset="0x467" Value="0x2A" />
+        <Parameter Name="TxParamEntry_42_ID" Offset="0x468" Value="0x7F" />
+        <Parameter Name="TxParamEntry_42_Tx1" Offset="0x469" Value="0x00" />
+        <Parameter Name="TxParamEntry_42_Tx2" Offset="0x46A" Value="0x2A" />
+        <Parameter Name="TxParamEntry_43_ID" Offset="0x46B" Value="0x7F" />
+        <Parameter Name="TxParamEntry_43_Tx1" Offset="0x46C" Value="0x00" />
+        <Parameter Name="TxParamEntry_43_Tx2" Offset="0x46D" Value="0x2A" />
+        <Parameter Name="TxParamEntry_44_ID" Offset="0x46E" Value="0x7F" />
+        <Parameter Name="TxParamEntry_44_Tx1" Offset="0x46F" Value="0x00" />
+        <Parameter Name="TxParamEntry_44_Tx2" Offset="0x470" Value="0x2A" />
+        <Parameter Name="TxParamEntry_45_ID" Offset="0x471" Value="0x7F" />
+        <Parameter Name="TxParamEntry_45_Tx1" Offset="0x472" Value="0x00" />
+        <Parameter Name="TxParamEntry_45_Tx2" Offset="0x473" Value="0x2A" />
+        <Parameter Name="TxParamEntry_46_ID" Offset="0x474" Value="0x7F" />
+        <Parameter Name="TxParamEntry_46_Tx1" Offset="0x475" Value="0x00" />
+        <Parameter Name="TxParamEntry_46_Tx2" Offset="0x476" Value="0x2A" />
+        <Parameter Name="TxParamEntry_47_ID" Offset="0x477" Value="0x7F" />
+        <Parameter Name="TxParamEntry_47_Tx1" Offset="0x478" Value="0x00" />
+        <Parameter Name="TxParamEntry_47_Tx2" Offset="0x479" Value="0x2A" />
+        <Parameter Name="TxParamEntry_48_ID" Offset="0x47A" Value="0x7F" />
+        <Parameter Name="TxParamEntry_48_Tx1" Offset="0x47B" Value="0x00" />
+        <Parameter Name="TxParamEntry_48_Tx2" Offset="0x47C" Value="0x2A" />
+        <Parameter Name="TxParamEntry_49_ID" Offset="0x47D" Value="0x7F" />
+        <Parameter Name="TxParamEntry_49_Tx1" Offset="0x47E" Value="0x00" />
+        <Parameter Name="TxParamEntry_49_Tx2" Offset="0x47F" Value="0x2A" />
+        <Parameter Name="TxParamEntry_4A_ID" Offset="0x480" Value="0x7F" />
+        <Parameter Name="TxParamEntry_4A_Tx1" Offset="0x481" Value="0x00" />
+        <Parameter Name="TxParamEntry_4A_Tx2" Offset="0x482" Value="0x2A" />
+        <Parameter Name="TxParamEntry_4B_ID" Offset="0x483" Value="0x7F" />
+        <Parameter Name="TxParamEntry_4B_Tx1" Offset="0x484" Value="0x00" />
+        <Parameter Name="TxParamEntry_4B_Tx2" Offset="0x485" Value="0x2A" />
+        <Parameter Name="TxParamEntry_4C_ID" Offset="0x486" Value="0x7F" />
+        <Parameter Name="TxParamEntry_4C_Tx1" Offset="0x487" Value="0x00" />
+        <Parameter Name="TxParamEntry_4C_Tx2" Offset="0x488" Value="0x2A" />
+        <Parameter Name="TxParamEntry_4D_ID" Offset="0x489" Value="0x7F" />
+        <Parameter Name="TxParamEntry_4D_Tx1" Offset="0x48A" Value="0x00" />
+        <Parameter Name="TxParamEntry_4D_Tx2" Offset="0x48B" Value="0x2A" />
+        <Parameter Name="TxParamEntry_4E_ID" Offset="0x48C" Value="0x7F" />
+        <Parameter Name="TxParamEntry_4E_Tx1" Offset="0x48D" Value="0x00" />
+        <Parameter Name="TxParamEntry_4E_Tx2" Offset="0x48E" Value="0x2A" />
+        <Parameter Name="dummy" Offset="0x48F" Value="0x000000" />
+    </Region>
+
+    <Region RegionName="LPCD_SETTINGS" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="avg_samples" Offset="0x492" Value="0x06" />
+        <Parameter Name="lpcd_rssi_target" Offset="0x494" Value="0x0360" />
+        <Parameter Name="lpcd_rssi_hyst" Offset="0x496" Value="0x19" />
+        <Parameter Name="Rfu" Offset="0x497" Value="0x00" />
+        <Parameter Name="Config" Offset="0x49B" Value="0x0403" />
+        <Parameter Name="lpcd_threshold_coarse" Offset="0x49E" Value="0x0A00" />
+        <Parameter Name="TxLdoVddpa" Offset="0x4B5" Value="0x05" />
+        <Parameter Name="rssi_nsp" Offset="0x4C9" Value="0x22" />
+        <Parameter Name="rssi_no_samples" Offset="0x4CA" Value="0x00" />
+        <Parameter Name="thresh_lvl" Offset="0x4CB" Value="0x05" />
+        <Parameter Name="polarity" Offset="0x4CC" Value="0x01" />
+    </Region>
+
+    <Region RegionName="ULPCD_CONFIG" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="Voltage_Ctrl" Offset="0x4C6" Value="0x0E" />
+        <Parameter Name="Gpadc_Crl" Offset="0x4C7" Value="0x0000" />
+    </Region>
+
+    <Region RegionName="ULPCD_SETTINGS" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="rssi_nsp" Offset="0x4C9" Value="0x22" />
+        <Parameter Name="rssi_no_samples" Offset="0x4CA" Value="0x00" />
+        <Parameter Name="thresh_lvl" Offset="0x4CB" Value="0x05" />
+        <Parameter Name="polarity" Offset="0x4CC" Value="0x01" />
+    </Region>
+
+    <Region RegionName="TX_SHAPING_PROPRIETARY_CORR" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="Correction_Entry0" Offset="0xBD4" Value="0x0000" />
+        <Parameter Name="Correction_Entry1" Offset="0xBD6" Value="0x0000" />
+        <Parameter Name="Correction_Entry2" Offset="0xBD8" Value="0x0000" />
+        <Parameter Name="Correction_Entry3" Offset="0xBDA" Value="0x0000" />
+        <Parameter Name="Correction_Entry4" Offset="0xBDC" Value="0x0000" />
+        <Parameter Name="Correction_Entry5" Offset="0xBDE" Value="0x0000" />
+        <Parameter Name="Correction_Entry6" Offset="0xBE0" Value="0x0000" />
+        <Parameter Name="Correction_Entry7" Offset="0xBE2" Value="0x0000" />
+        <Parameter Name="Correction_Entry8" Offset="0xBE4" Value="0x0000" />
+        <Parameter Name="Correction_Entry9" Offset="0xBE6" Value="0x0000" />
+        <Parameter Name="Correction_Entry10" Offset="0xBE8" Value="0x0000" />
+        <Parameter Name="Correction_Entry11" Offset="0xBEA" Value="0x0000" />
+        <Parameter Name="Correction_Entry12" Offset="0xBEC" Value="0x0000" />
+        <Parameter Name="Correction_Entry13" Offset="0xBEE" Value="0x0000" />
+        <Parameter Name="Correction_Entry14" Offset="0xBF0" Value="0x0000" />
+        <Parameter Name="Correction_Entry15" Offset="0xBF2" Value="0x0000" />
+        <Parameter Name="Correction_Entry16" Offset="0xBF4" Value="0x0000" />
+        <Parameter Name="Correction_Entry17" Offset="0xBF6" Value="0x0000" />
+        <Parameter Name="Correction_Entry18" Offset="0xBF8" Value="0x0000" />
+        <Parameter Name="Correction_Entry19" Offset="0xBFA" Value="0x0000" />
+        <Parameter Name="Correction_Entry20" Offset="0xBFC" Value="0x0000" />
+        <Parameter Name="Correction_Entry21" Offset="0xBFE" Value="0x0000" />
+        <Parameter Name="Correction_Entry22" Offset="0xC00" Value="0x0000" />
+        <Parameter Name="Correction_Entry23" Offset="0xC02" Value="0x0000" />
+        <Parameter Name="Correction_Entry24" Offset="0xC04" Value="0x0000" />
+        <Parameter Name="Correction_Entry25" Offset="0xC06" Value="0x0000" />
+        <Parameter Name="Correction_Entry26" Offset="0xC08" Value="0x0000" />
+        <Parameter Name="Correction_Entry27" Offset="0xC0A" Value="0x0000" />
+        <Parameter Name="Correction_Entry28" Offset="0xC0C" Value="0x0000" />
+        <Parameter Name="Correction_Entry29" Offset="0xC0E" Value="0x0000" />
+        <Parameter Name="Correction_Entry30" Offset="0xC10" Value="0x0000" />
+        <Parameter Name="Correction_Entry31" Offset="0xC12" Value="0x0000" />
+        <Parameter Name="Correction_Entry32" Offset="0xC14" Value="0x0000" />
+        <Parameter Name="Correction_Entry33" Offset="0xC16" Value="0x0000" />
+        <Parameter Name="Correction_Entry34" Offset="0xC18" Value="0x0000" />
+        <Parameter Name="Correction_Entry35" Offset="0xC1A" Value="0x0000" />
+        <Parameter Name="Correction_Entry36" Offset="0xC1C" Value="0x0000" />
+        <Parameter Name="Correction_Entry37" Offset="0xC1E" Value="0x0000" />
+        <Parameter Name="Correction_Entry38" Offset="0xC20" Value="0x0000" />
+        <Parameter Name="Correction_Entry39" Offset="0xC22" Value="0x0000" />
+        <Parameter Name="Correction_Entry40" Offset="0xC24" Value="0x0000" />
+        <Parameter Name="Correction_Entry41" Offset="0xC26" Value="0x0000" />
+        <Parameter Name="Correction_Entry42" Offset="0xC28" Value="0x0000" />
+    </Region>
+
+    <Region RegionName="TX_SHAPING_PROPRIETARY_1" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="RTRANS0" Offset="0xC2A" Value="0xF0EBE4DB" />
+        <Parameter Name="RTRANS1" Offset="0xC2E" Value="0xFBF9F7F4" />
+        <Parameter Name="RTRANS2" Offset="0xC32" Value="0xFEFDFDFC" />
+        <Parameter Name="RTRANS3" Offset="0xC36" Value="0xFFFFFFFE" />
+        <Parameter Name="FTRANS0" Offset="0xC3A" Value="0xFEFFFFFF" />
+        <Parameter Name="FTRANS1" Offset="0xC3E" Value="0xFCFDFDFE" />
+        <Parameter Name="FTRANS2" Offset="0xC42" Value="0xF4F7F9FB" />
+        <Parameter Name="FTRANS3" Offset="0xC46" Value="0xDBE4EBF0" />
+    </Region>
+
+    <Region RegionName="TX_SHAPING_PROPRIETARY_2" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="RTRANS0" Offset="0xC4A" Value="0xF0EAE3DA" />
+        <Parameter Name="RTRANS1" Offset="0xC4E" Value="0xFAF9F6F4" />
+        <Parameter Name="RTRANS2" Offset="0xC52" Value="0xFEFDFDFC" />
+        <Parameter Name="RTRANS3" Offset="0xC56" Value="0xFFFFFFFE" />
+        <Parameter Name="FTRANS0" Offset="0xC5A" Value="0xFEFFFFFF" />
+        <Parameter Name="FTRANS1" Offset="0xC5E" Value="0xFCFDFDFE" />
+        <Parameter Name="FTRANS2" Offset="0xC62" Value="0xF4F6F9FA" />
+        <Parameter Name="FTRANS3" Offset="0xC66" Value="0xDAE3EAF0" />
+    </Region>
+
+    <Region RegionName="TX_SHAPING_PROPRIETARY_3" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="RTRANS0" Offset="0xC6A" Value="0x00000000" />
+        <Parameter Name="RTRANS1" Offset="0xC6E" Value="0x00000000" />
+        <Parameter Name="RTRANS2" Offset="0xC72" Value="0x00000000" />
+        <Parameter Name="RTRANS3" Offset="0xC76" Value="0x00000000" />
+        <Parameter Name="FTRANS0" Offset="0xC7A" Value="0x00000000" />
+        <Parameter Name="FTRANS1" Offset="0xC7E" Value="0x00000000" />
+        <Parameter Name="FTRANS2" Offset="0xC82" Value="0x00000000" />
+        <Parameter Name="FTRANS3" Offset="0xC86" Value="0x00000000" />
+    </Region>
+
+    <Region RegionName="TX_SHAPING_PROPRIETARY_4" RegionAccess="RW" RegionType="DATA">
+        <Parameter Name="RTRANS0" Offset="0xC8A" Value="0x00000000" />
+        <Parameter Name="RTRANS1" Offset="0xC8E" Value="0x00000000" />
+        <Parameter Name="RTRANS2" Offset="0xC92" Value="0x00000000" />
+        <Parameter Name="RTRANS3" Offset="0xC96" Value="0x00000000" />
+        <Parameter Name="FTRANS0" Offset="0xC9A" Value="0x00000000" />
+        <Parameter Name="FTRANS1" Offset="0xC9E" Value="0x00000000" />
+        <Parameter Name="FTRANS2" Offset="0xCA2" Value="0x00000000" />
+        <Parameter Name="FTRANS3" Offset="0xCA6" Value="0x00000000" />
+    </Region>
+
+    <Region RegionName="RegisterValuePair" RegionOffset="0x70" RegionType="PROTOCOL" RegionAccess="INDIRECT">
+        <Protocol ProtocolName="TX ISO14443A 106" ProtocolIndex="0x00" ProtocolOffset="0x70">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000F00FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00003D41"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00220104"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00220104"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A 212" ProtocolIndex="0x01" ProtocolOffset="0x8E">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00110105"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00110105"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A 424" ProtocolIndex="0x02" ProtocolOffset="0xAC">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00060106"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00060106"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A 848" ProtocolIndex="0x03" ProtocolOffset="0xCA">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00020107"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00020107"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443B 106" ProtocolIndex="0x04" ProtocolOffset="0xE8">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00030107"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000084"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443B 212" ProtocolIndex="0x05" ProtocolOffset="0x106">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00030107"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000085"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443B 424" ProtocolIndex="0x06" ProtocolOffset="0x124">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00030107"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000086"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443B 848" ProtocolIndex="0x07" ProtocolOffset="0x142">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00030107"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000087"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX Felica 212" ProtocolIndex="0x08" ProtocolOffset="0x160">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000015"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX Felica 424" ProtocolIndex="0x09" ProtocolOffset="0x17E">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000016"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO15693 ASK100" ProtocolIndex="0x0A" ProtocolOffset="0x19C">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000F00FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000004"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00020084"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000043"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO15693 ASK10" ProtocolIndex="0x0B" ProtocolOffset="0x1BA">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000004"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00020084"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000043"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO180003m3 TARI=18.88us" ProtocolIndex="0x0F" ProtocolOffset="0x1D8">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000F00FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000004"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00020084"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000043"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO180003m3 TARI=9.44us" ProtocolIndex="0x10" ProtocolOffset="0x1F6">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000004"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00020084"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000043"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A-PICC 106" ProtocolIndex="0x13" ProtocolOffset="0x214">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x001F002E"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00008002"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x0000002C"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x0000002C"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A-PICC 212" ProtocolIndex="0x14" ProtocolOffset="0x232">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00007402"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x0000003D"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A-PICC 424" ProtocolIndex="0x15" ProtocolOffset="0x250">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00007402"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x0000002E"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x0000003E"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX ISO14443A-PICC 848" ProtocolIndex="0x16" ProtocolOffset="0x26E">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00007402"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x0000002F"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x0000003F"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX NFC-PT-212 212" ProtocolIndex="0x17" ProtocolOffset="0x28C">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000015"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX NFC-PT-424 424" ProtocolIndex="0x18" ProtocolOffset="0x2AA">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000016"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX NFC-AT-106 106" ProtocolIndex="0x19" ProtocolOffset="0x2C8">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00007303"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00260104"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00260104"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX NFC-AT-212 212" ProtocolIndex="0x1A" ProtocolOffset="0x2E6">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000015"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX NFC-AT-424 424" ProtocolIndex="0x1B" ProtocolOffset="0x304">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000016"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX GTM All" ProtocolIndex="0x1C" ProtocolOffset="0x322">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000700FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x001F002E"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00008002"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x0000002C"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x0000002C"></Register>
+        </Protocol>
+        <Protocol ProtocolName="TX B_Prime All" ProtocolIndex="0x1D" ProtocolOffset="0x340">
+            <Register RegisterName="CLIF_SS_TX1_CMCFG" RegisterLogicalAddress="0x3B" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_SS_TX2_CMCFG" RegisterLogicalAddress="0x3C" RegisterValue="0x000900FF"></Register>
+            <Register RegisterName="CLIF_TX_UNDERSHOOT_CONFIG" RegisterLogicalAddress="0x13" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_OVERSHOOT_CONFIG" RegisterLogicalAddress="0x14" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TRANSCEIVE_CONTROL" RegisterLogicalAddress="0x8" RegisterValue="0x00000001"></Register>
+            <Register RegisterName="CLIF_SS_TX_CFG" RegisterLogicalAddress="0x15" RegisterValue="0x00002289"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_MOD" RegisterLogicalAddress="0x0C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL23_DEF" RegisterLogicalAddress="0x0D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_TX_SYMBOL_CONFIG" RegisterLogicalAddress="0x10" RegisterValue="0x00000084"></Register>
+        </Protocol>
+
+        <Protocol ProtocolName="RX ISO14443A 106" ProtocolIndex="0x80" ProtocolOffset="0x35E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x09BD307F"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x500800B0"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4D24A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x7B75FFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x393351AA"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x4A8B60A7"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A 212" ProtocolIndex="0x81" ProtocolOffset="0x3D6">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x10F8024C"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000055"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400800C0"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x8A866150"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A 424" ProtocolIndex="0x82" ProtocolOffset="0x44E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x14F80228"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000055"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x401000D0"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3833518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x8A046548"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A 848" ProtocolIndex="0x83" ProtocolOffset="0x4C6">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x28F80209"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000055"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x401000E0"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x42026508"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443B 106" ProtocolIndex="0x84" ProtocolOffset="0x53E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x3E380248"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000045"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400000B6"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x95086250"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443B 212" ProtocolIndex="0x85" ProtocolOffset="0x5B6">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x10380248"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000045"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400000C6"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x94866248"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443B 424" ProtocolIndex="0x86" ProtocolOffset="0x62E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x20380248"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000045"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400000D6"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x94046650"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443B 848" ProtocolIndex="0x87" ProtocolOffset="0x6A6">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x0A380209"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000045"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400000E6"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x5C026608"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX Felica 212" ProtocolIndex="0x88" ProtocolOffset="0x71E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x28780228"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000055"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x110000C4"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x0088D238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x01806100"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX Felica 424" ProtocolIndex="0x89" ProtocolOffset="0x796">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x28780228"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000055"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x010000D4"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x0088D238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00D23400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x48826548"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO15693 6P6" ProtocolIndex="0x8A" ProtocolOffset="0x80E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815307D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x40080088"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0xDB0660FF"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO15693 26" ProtocolIndex="0x8B" ProtocolOffset="0x886">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815307D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x40080098"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x8B1660F7"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO15693 53" ProtocolIndex="0x8C" ProtocolOffset="0x8FE">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815307D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400800A8"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x432B609F"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO15693 Plutus 106" ProtocolIndex="0x8D" ProtocolOffset="0x976">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815307D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x401000B8"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x42A2689F"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO15693 Plutus 212" ProtocolIndex="0x8E" ProtocolOffset="0x9EE">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815307D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x401800C8"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x422C689F"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO180003m3 TARI=18.88us 424_4" ProtocolIndex="0x8F" ProtocolOffset="0xA66">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815077D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400800AA"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x000017FF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFE"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x39655194"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x6B3B60AB"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO180003m3 TARI=9.44us 424_2" ProtocolIndex="0x90" ProtocolOffset="0xADE">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815077D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400800BC"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x000017FF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFE"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x39655194"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x23406053"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO180003m3 TARI=18.88us 848_4" ProtocolIndex="0x91" ProtocolOffset="0xB56">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815077D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400800BA"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x000017FF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFE"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x39655194"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x6ABB60AB"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO180003m3 TARI=9.44us 848_2" ProtocolIndex="0x92" ProtocolOffset="0xBCE">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x000A0200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x0815077D"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x401000CC"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x000017FF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x0D81830E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xAD4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x6A8FFFFE"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x39655194"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x6A3264AB"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A-PICC 106" ProtocolIndex="0x93" ProtocolOffset="0xC46">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000B1"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x000037FF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0xB79600A0"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A-PICC 212" ProtocolIndex="0x94" ProtocolOffset="0xCBE">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00000032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000C1"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0xB79700A0"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A-PICC 424" ProtocolIndex="0x95" ProtocolOffset="0xD36">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00000032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000D1"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0xB79700A0"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX ISO14443A-PICC 848" ProtocolIndex="0x96" ProtocolOffset="0xDAE">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00000032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000E1"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0xB79700A0"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX NFC-PT-212 212" ProtocolIndex="0x97" ProtocolOffset="0xE26">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000C5"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x20100000"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX NFC-PT-424 424" ProtocolIndex="0x98" ProtocolOffset="0xE9E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000D5"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x20060200"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX NFC-AT-106 106" ProtocolIndex="0x99" ProtocolOffset="0xF16">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024868"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000B3"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0000001B"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x0000001B"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x2040001B"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX NFC-AT-212 212" ProtocolIndex="0x9A" ProtocolOffset="0xF8E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024868"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000C3"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00100000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00100000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x20500000"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX NFC-AT-424 424" ProtocolIndex="0x9B" ProtocolOffset="0x1006">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024868"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x000000D3"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00060000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00060000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x20460200"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX GTM All" ProtocolIndex="0x9C" ProtocolOffset="0x107E">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0700E437"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x00100032"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0004C935"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024828"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x4000003F"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00A93979"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x00000081"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x000037FF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x00280200"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x00000000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x00000003"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0xBF9600A0"></Register>
+        </Protocol>
+        <Protocol ProtocolName="RX B_Prime All" ProtocolIndex="0x9D" ProtocolOffset="0x10F6">
+            <Register RegisterName="CLIF_ANA_RX_CTRL" RegisterLogicalAddress="0x43" RegisterValue="0x0000E407"></Register>
+            <Register RegisterName="CLIF_DCOC_CONFIG" RegisterLogicalAddress="0x33" RegisterValue="0x000000F4"></Register>
+            <Register RegisterName="CLIF_RXM_CTRL" RegisterLogicalAddress="0x35" RegisterValue="0x0044893E"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG2" RegisterLogicalAddress="0x38" RegisterValue="0x00024820"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG1" RegisterLogicalAddress="0x39" RegisterValue="0x00000FC0"></Register>
+            <Register RegisterName="CLIF_GCM_CONFIG0" RegisterLogicalAddress="0x3A" RegisterValue="0x00D03939"></Register>
+            <Register RegisterName="CLIF_ANA_AGC_DCO_CTRL" RegisterLogicalAddress="0x36" RegisterValue="0x01000008"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_CONFIG" RegisterLogicalAddress="0x1F" RegisterValue="0x02380248"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_ENABLES" RegisterLogicalAddress="0x21" RegisterValue="0x00000055"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CONFIG" RegisterLogicalAddress="0x1D" RegisterValue="0x400000BE"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG1" RegisterLogicalAddress="0x23" RegisterValue="0x0C082155"></Register>
+            <Register RegisterName="CLIF_SIGPRO_NOISE_CONFIG2" RegisterLogicalAddress="0x24" RegisterValue="0x00085510"></Register>
+            <Register RegisterName="CLIF_RX_ERROR_CONFIG" RegisterLogicalAddress="0x27" RegisterValue="0x00003FFF"></Register>
+            <Register RegisterName="CLIF_RX_EMD_0_CONFIG" RegisterLogicalAddress="0x48" RegisterValue="0x1F200000"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG1" RegisterLogicalAddress="0x29" RegisterValue="0x01B0618E"></Register>
+            <Register RegisterName="CLIF_SIGPRO_IIR_CONFIG0" RegisterLogicalAddress="0x2A" RegisterValue="0x000A85CC"></Register>
+            <Register RegisterName="CLIF_DGRM_DAC_FILTER" RegisterLogicalAddress="0x2B" RegisterValue="0x00889238"></Register>
+            <Register RegisterName="CLIF_DGRM_CONFIG" RegisterLogicalAddress="0x2C" RegisterValue="0x00E63400"></Register>
+            <Register RegisterName="CLIF_DGRM_BBA" RegisterLogicalAddress="0x2D" RegisterValue="0xED4C64A4"></Register>
+            <Register RegisterName="CLIF_DGRM_DCO" RegisterLogicalAddress="0x2E" RegisterValue="0xC0F7C1F0"></Register>
+            <Register RegisterName="CLIF_DGRM_HF_ATT" RegisterLogicalAddress="0x2F" RegisterValue="0x2A8FFFFF"></Register>
+            <Register RegisterName="CLIF_DGRM_RSSI" RegisterLogicalAddress="0x30" RegisterValue="0x3933518A"></Register>
+            <Register RegisterName="CLIF_SIGPRO_RM_TECH" RegisterLogicalAddress="0x22" RegisterValue="0x95086250"></Register>
+            <Register RegisterName="CLIF_SIGPRO_CM_CONFIG" RegisterLogicalAddress="0x37" RegisterValue="0x1FE00001"></Register>
+        </Protocol>
+    </Region>
+</EEPROM>
